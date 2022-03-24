@@ -15,12 +15,12 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install npm dependencies
-        run: |
-          npm install
-          npm install gh-pages
+        run: npm install
 
       - name: Build
         run: npm run build
 
       - name: Deploy
-        run: gh-pages -d build
+        run: |
+          npm install gh-pages --save-dev
+          gh-pages -d build
