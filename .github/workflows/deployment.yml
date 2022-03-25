@@ -29,7 +29,7 @@ jobs:
         env:
           user_name: 'bhavinpanchani'
           user_email: 'bhavinpanchani9@gmail.com'
-          github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           repository: ${{ github.repository }}
 
 #       - uses: actions/checkout@v2
