@@ -14,12 +14,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Update git
+        run: |
+          apt-get update
+          apt-get install git -y
+          
       - name: Install npm dependencies
         run: npm install
-
-
-      - name: Update git
-        run: apt-get update git
         
       - name: Build
         run: npm run build
