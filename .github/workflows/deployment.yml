@@ -18,48 +18,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
-      - name: Install and build
+      - name: Install and Build
         run: npm install && npm run build
       
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: build # The folder the action should deploy.  
-
-#     steps:
-#         - name: Test
-#           run: echo "Test"
-          
-#       - name: Checkout code
-#         uses: actions/checkout@v2
-          
-#       - name: Install npm dependencies
-#         run: npm install
-        
-#       - name: Build
-#         run: npm run build
-
-#       - name: Deploy
-#         run: |
-#           git remote set-url origin https://${github_token}@github.com/bhavinpanchani/portfolio.git
-#           npm run deploy
-#         env:
-#           github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-#           repository: ${{ github.repository }}
-
-#       - uses: actions/checkout@v2
-#       - name: Use Node.js ${{ matrix.node-version }}
-#         uses: actions/setup-node@v2
-#         with:
-#           node-version: ${{ matrix.node-version }}
-#       - name: npm ci, build and test
-#         run: |
-#           npm ci
-#           npm run build --if-present
-# #          npm test
-#       - name: deploy to gh-pages
-#         uses: peaceiris/actions-gh-pages@v3
-#         with:
-# #           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-#           publish_dir: ./build   
+          branch: gh-pages
+          folder: build
+          commit-message: Deploy to Github Pages
