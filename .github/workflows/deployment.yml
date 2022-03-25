@@ -22,7 +22,7 @@ jobs:
 
       - name: Deploy
         run: |
-          git remote set-url add origin https://${github_token}@github.com/bhavinpanchani/portfolio.git
+          git remote add origin https://${github_token}@github.com/bhavinpanchani/portfolio.git
           npm run deploy
         env:
           github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
