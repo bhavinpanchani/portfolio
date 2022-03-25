@@ -1,29 +1,29 @@
-# name: Deployment
+name: Deployment
 
-# on:
-#   push:
-#     branches: [ master ]
+on:
+  push:
+    branches: [ master ]
 
-#   workflow_dispatch:
+  workflow_dispatch:
 
-# jobs:
-#   build-and-deploy:
-#     runs-on: ubuntu-latest
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
 
-#     steps:
-# #       - name: Checkout code
-# #         uses: actions/checkout@v2
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-# #       - name: Install npm dependencies
-# #         run: npm install
+      - name: Install npm dependencies
+        run: npm install
 
-# #       - name: Build
-# #         run: npm run build
+      - name: Build
+        run: npm run build
 
-# #       - name: Deploy
-# #         run: |
-# #           npm install gh-pages --save-dev
-# #           gh-pages -d build
+      - name: Deploy
+        run: |
+          npm install gh-pages
+          gh-pages -d build
 
 
 #       - uses: actions/checkout@v2
