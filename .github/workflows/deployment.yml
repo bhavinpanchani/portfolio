@@ -21,7 +21,9 @@ jobs:
         run: npm run build
 
       - name: Deploy
-        run: npm run deploy
+        run: |
+          git remote add origin https://{username}:{password}@github.com/{username}/portfolio.git
+          npm run deploy
 
 
 #       - uses: actions/checkout@v2
