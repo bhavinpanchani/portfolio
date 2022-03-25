@@ -19,14 +19,20 @@ jobs:
         
       - name: Build
         run: npm run build
+        
+      - name: deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./build  
 
-      - name: Deploy
-        run: |
-          git remote set-url origin https://${github_token}@github.com/bhavinpanchani/portfolio.git
-          npm run deploy
-        env:
-          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          repository: ${{ github.repository }}
+#       - name: Deploy
+#         run: |
+#           git remote set-url origin https://${github_token}@github.com/bhavinpanchani/portfolio.git
+#           npm run deploy
+#         env:
+#           github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+#           repository: ${{ github.repository }}
 
 #       - uses: actions/checkout@v2
 #       - name: Use Node.js ${{ matrix.node-version }}
