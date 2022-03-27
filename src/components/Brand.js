@@ -1,12 +1,12 @@
-import './css/App.css';
+import '../css/Brand.css';
 
-function App() {
+function Brand() {
   return (
-    <div className="App">
+    <div className="Brand">
       <h1>Bhavin Panchani</h1>
       <h3>Full Stack Developer</h3>
     </div>
   );
 }
 
-export default App;
+export default Brand;
