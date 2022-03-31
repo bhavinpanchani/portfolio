@@ -1,8 +1,26 @@
 .Brand {
   text-align: center;
+  font-size: 18px;
+  color: #f1f5f8;
+  background-color: #3A5F7C;
+  height: 100vh;
 }
 
-.Brand-logo {
+.brand-content{
+  padding-top: 30vh;
+}
+
+.name{
+  margin: 0;
+  padding: 0;
+}
+.occupation{
+  margin: 0;
+  padding: 0;
+  color:lightgrey;
+}
+
+/* .Brand-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +53,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
