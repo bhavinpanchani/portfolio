@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../css/Brand.css';
-import axios from 'axios';
+// import axios from 'axios';
 
 // const api = axios.create({
 //   // baseURL: `http://study-on.us-east-1.elasticbeanstalk.com/`
