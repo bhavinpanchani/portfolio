@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import '../css/Brand.css';
 import axios from 'axios';
 
-const api = axios.create({
-  // baseURL: `http://study-on.us-east-1.elasticbeanstalk.com/`
-  baseURL: `http://127.0.0.1:8080/`
-})
+// const api = axios.create({
+//   // baseURL: `http://study-on.us-east-1.elasticbeanstalk.com/`
+//   baseURL: `http://127.0.0.1:8080/`
+// })
 
 // function Brand() {
 //   return (
@@ -20,16 +20,16 @@ const api = axios.create({
 
 class Brand extends Component {
 
-  constructor() {
-    super()
-    api.get('university/',
-      // {
-      //   mode: 'no-cors'
-      // }
-    ).then(res => {
-      console.log(res.data)
-    })
-  }
+  // constructor() {
+  //   super()
+  //   api.get('university/',
+  //     // {
+  //     //   mode: 'no-cors'
+  //     // }
+  //   ).then(res => {
+  //     console.log(res.data)
+  //   })
+  // }
 
   render() {
     return (
