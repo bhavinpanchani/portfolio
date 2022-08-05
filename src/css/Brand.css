@@ -1,23 +1,33 @@
 .Brand {
   text-align: center;
   font-size: 18px;
+  /* font-family: 'Oswald', sans-serif; */
+  font-family: 'Paytone One', sans-serif;
   color: #f1f5f8;
   background-color: #3A5F7C;
   height: 100vh;
 }
 
-.brand-content{
-  padding-top: 30vh;
+.brand-content {
+  padding-top: 20vh;
 }
 
-.name{
+.name {
   margin: 0;
   padding: 0;
 }
-.occupation{
+
+.occupation {
   margin: 0;
   padding: 0;
-  color:lightgrey;
+  color: lightgrey;
+}
+
+.Bhavin_photo {
+  width: 300px;
+  /* height: 300px; */
+  border-radius: 150px;
+  object-fit: cover;
 }
 
 /* .Brand-logo {

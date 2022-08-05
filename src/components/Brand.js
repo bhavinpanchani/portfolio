@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../css/Brand.css';
+import Bhavin from '../assets/Bhavin_crop.jpg'
 // import axios from 'axios';
 
 // const api = axios.create({
@@ -35,6 +36,7 @@ class Brand extends Component {
     return (
       <div className="Brand">
         <div className='brand-content'>
+          <img className='Bhavin_photo' src={Bhavin} alt='Bhavin_photo'></img>
           <h1 className='name'>BHAVIN PANCHANI</h1>
           <h3 className='occupation'>Full Stack Developer</h3>
         </div>
